@@ -1,0 +1,76 @@
+* {
+  font-family: Arial;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.game,
+.game__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  height: 100vh;
+}
+
+.game__title {
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+.game__wrongboard {
+  margin: 2em;
+}
+
+.game__word {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+
+.game__guessing {
+  margin: 1em;
+}
+
+.game__input {
+  text-align: center;
+  padding: 0.5em;
+  font-size: 1rem;
+}
+
+.game__guessed {
+  letter-spacing: 0.2em;
+  height: 2em;
+  width: 100%;
+}
+
+.game__guessed--correct {
+  color: green;
+}
+
+.game__guessed--wrong {
+  color: red;
+}
+
+.game__input:focus {
+  outline: none;
+  border: 1px solid #007bff;
+}
+
+.game__button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5em 3em;
+  cursor: pointer;
+}
+.game__button:hover {
+  background-color: #0056b3;
+}
